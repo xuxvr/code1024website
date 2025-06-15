@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术展示 - 个人作品集</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">code1024.club</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#skills" class="nav-link">技能</a></li>
+                <li><a href="#projects" class="nav-link">项目</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Three.js 3D背景容器 -->
+    <div id="three-container"></div>
+
+    <!-- 主要内容 -->
+    <main>
+        <!-- 首页区域 -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="typing-text"></span>
+                    <span class="cursor">|</span>
+                </h1>
+                <p class="hero-subtitle">全栈开发者 | VR/AR专家 | 3D交互设计师</p>
+                <div class="hero-skills">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Django</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Three.js</span>
+                    <span class="skill-tag">Unity3D</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">AI/LLM</span>
+                    <span class="skill-tag">RAG</span>
+                    <span class="skill-tag">Stable Diffusion</span>
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag">微信小程序</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">查看作品</a>
+                    <a href="#contact" class="btn btn-secondary">联系我</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- 技能展示区域 -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">技术技能</h2>
+                <div class="skills-grid">
+                    <div class="skill-category" data-aos="fade-up">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>前端开发</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span>HTML/CSS/JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Three.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>后端开发</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span>Python/Django</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>MySQL/Docker</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                        <div class="skill-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h3>3D/VR/AR</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span>Unity3D</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>C#</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="600">
+                        <div class="skill-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI/机器学习</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span>大模型本地部署</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>RAG检索增强</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Stable Diffusion</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>LangChain/LlamaIndex</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="800">
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>移动端开发</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span>微信小程序</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Flutter跨平台</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>Android APP</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>IOS APP</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 项目展示区域 -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">精选项目</h2>
+                <div class="projects-grid">
+                    <div class="project-card" data-aos="fade-up">
+                        <div class="project-image">
+                            <div class="project-3d-preview" id="project-1-3d"></div>
+                        </div>
+                        <div class="project-content">
+                            <h3>VR交互体验</h3>
+                            <p>使用Unity3D开发的沉浸式VR应用，支持手势识别和空间交互。</p>
+                            <div class="project-tech">
+                                <span>Unity3D</span>
+                                <span>C#</span>
+                                <span>VR SDK</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image">
+                            <div class="project-3d-preview" id="project-2-3d"></div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Web 3D可视化</h3>
+                            <p>基于Three.js的数据可视化平台，支持实时3D图表和交互式数据探索。</p>
+                            <div class="project-tech">
+                                <span>Three.js</span>
+                                <span>JavaScript</span>
+                                <span>WebGL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-image">
+                            <div class="project-3d-preview" id="project-3-3d"></div>
+                        </div>
+                        <div class="project-content">
+                            <h3>全栈Web应用</h3>
+                            <p>Django后端 + 现代前端的完整Web应用，包含用户管理和数据分析功能。</p>
+                            <div class="project-tech">
+                                <span>Django</span>
+                                <span>Python</span>
+                                <span>MySQL</span>
+                                <span>Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="project-image">
+                            <div class="project-3d-preview" id="project-4-3d"></div>
+                        </div>
+                        <div class="project-content">
+                            <h3>AI智能助手平台</h3>
+                            <p>基于大模型的智能对话系统，集成RAG检索增强和Stable Diffusion图像生成功能。</p>
+                            <div class="project-tech">
+                                <span>LLM</span>
+                                <span>RAG</span>
+                                <span>LangChain</span>
+                                <span>Stable Diffusion</span>
+                                <span>FastAPI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="800">
+                        <div class="project-image">
+                            <div class="project-3d-preview" id="project-5-3d"></div>
+                        </div>
+                        <div class="project-content">
+                            <h3>跨平台移动应用</h3>
+                            <p>Flutter开发的跨平台APP，集成微信小程序云开发，支持iOS/Android双端发布。</p>
+                            <div class="project-tech">
+                                <span>Android APP</span>
+                                <span>IOS APP</span>
+                                <span>微信小程序</span>
+                                <span>云开发</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系区域 -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">联系方式</h2>
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right">
+                        <h3>让我们一起创造</h3>
+                        <p>如果您对我的作品感兴趣，或者有项目合作的想法，欢迎随时联系我。</p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <span>admin@code1024.club</span>
+                            </div>
+                            <!-- <div class="contact-method">
+                                <i class="fab fa-github"></i>
+                                <span>github.com/</span>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="contact-form" data-aos="fade-left">
+                        <form id="contact-form" action="https://formspree.io/admin@code1024.club" method="POST">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="您的姓名" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="您的邮箱" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="您的消息" rows="5" required></textarea>
+                            </div>
+                            <!-- Formspree 隐藏字段 -->
+                            <input type="hidden" name="_next" value="https://code1024.club">
+                            <input type="hidden" name="_subject" value="网站联系表单 - 新消息">
+                            <input type="hidden" name="_cc" value="admin@code1024.club">
+                            <button type="submit" class="btn btn-primary">发送消息</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 回到顶部按钮 -->
+    <button id="back-to-top" class="back-to-top" aria-label="回到顶部">
+        <svg class="progress-ring" width="50" height="50">
+            <circle class="progress-ring-circle" cx="25" cy="25" r="20" fill="transparent" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+            <circle class="progress-ring-progress" cx="25" cy="25" r="20" fill="transparent" stroke="rgba(255,255,255,0.8)" stroke-width="2"/>
+        </svg>
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 code1024.club</p>
+        </div>
+    </footer>
+
+    <!-- 脚本引入 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="three-scene.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
