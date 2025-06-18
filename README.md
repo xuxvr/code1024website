@@ -47,28 +47,6 @@ php -S localhost:8000
 
 3. 在浏览器中访问 `http://localhost:8000`
 
-### 部署到Cloudflare Pages
-
-1. 将代码推送到GitHub仓库
-
-2. 登录Cloudflare Dashboard
-
-3. 进入Pages部分，点击"创建项目"
-
-4. 连接GitHub仓库
-
-5. 配置构建设置：
-   - **构建命令**: 留空（静态站点）
-   - **构建输出目录**: `/`
-   - **根目录**: `/`
-
-6. 点击"保存并部署"
-
-### 自定义域名
-
-1. 在Cloudflare Pages项目中，进入"自定义域"
-2. 添加您的域名
-3. 按照提示配置DNS记录
 
 ## 📁 项目结构
 
@@ -143,9 +121,8 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
 
 ## 📞 联系方式
 
-- 邮箱: your.email@example.com
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
+- 邮箱: admin@code1024.club
+- GitHub: [@xuxvr](https://github.com/xuxvr)
 
 ## 🙏 致谢
 
