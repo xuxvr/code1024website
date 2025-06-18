@@ -1,39 +1,212 @@
-# 操作系统生成的文件
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# 个人作品集网站 - Git忽略文件
 
+# ===========================================
+# 操作系统生成的文件
+# ===========================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===========================================
 # 编辑器和IDE文件
+# ===========================================
+
+# Visual Studio Code
 .vscode/
+*.code-workspace
+
+# JetBrains IDEs
 .idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
 *.swp
 *.swo
 *~
 
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ===========================================
+# 临时文件和日志
+# ===========================================
+
 # 日志文件
 *.log
+logs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# 依赖目录
-node_modules/
+# 临时文件
+*.tmp
+*.temp
+temp/
+.tmp/
 
-# 构建输出
-dist/
-build/
+# 缓存文件
+*.cache
+.cache/
+cache/
+
+# ===========================================
+# 环境配置和敏感信息
+# ===========================================
 
 # 环境变量文件
 .env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.development
+.env.test
+.env.production
 
-# 临时文件
-*.tmp
-*.temp 
+# 配置文件（如果包含敏感信息）
+config.json
+settings.json
+
+# API密钥文件
+api-keys.txt
+secrets.txt
+
+# ===========================================
+# 构建和部署相关
+# ===========================================
+
+# 构建输出
+dist/
+build/
+out/
+public/
+
+# 依赖文件夹
+node_modules/
+bower_components/
+
+# 包管理器文件
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# ===========================================
+# 备份和版本控制
+# ===========================================
+
+# 备份文件
+*.bak
+*.backup
+*.old
+*.orig
+
+# 补丁文件
+*.patch
+*.diff
+
+# ===========================================
+# 项目特定文件
+# ===========================================
+
+# 本地开发服务器
+.vscode/settings.json
+.vscode/launch.json
+
+# 测试覆盖率报告
+coverage/
+.nyc_output/
+
+# 性能测试结果
+.benchmarks/
+
+# 文档生成
+docs/build/
+
+# ===========================================
+# 大文件和媒体文件（如果不需要版本控制）
+# ===========================================
+
+# 大型媒体文件
+# *.mp4
+# *.mov
+# *.avi
+# *.mkv
+# *.psd
+# *.ai
+
+# 压缩文件
+# *.zip
+# *.rar
+# *.7z
+# *.tar.gz
+
+# ===========================================
+# 开发工具生成的文件
+# ===========================================
+
+# ESLint
+.eslintcache
+
+# Prettier
+.prettierignore
+
+# TypeScript
+*.tsbuildinfo
+
+# Sass
+.sass-cache/
+
+# ===========================================
+# 自定义忽略（根据需要添加）
+# ===========================================
+
+# 忽略所有 .md 文件，除了 README.md
+*.md
+!README.md
+
+# 忽略所有 .bat 批处理文件
+*.bat
+
+# 如果您有其他特定的文件需要忽略，请在这里添加
+# 例如：
+# my-secret-file.txt
+# private-config.json 
